@@ -5,7 +5,7 @@ void setup() {
   sensor.calibrate();
 }
 void loop() {
-  float I = sensor.getCurrentAC();
+  float I = sensor.getCurrentDC();
   Serial.println(String("I = ") + I + " A");
   delay(1000);
 }
